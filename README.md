@@ -4,6 +4,7 @@ A disk data erasure program based on Linux system
 基于大佬的scrub项目编写，指路：https://github.com/chaos/scrub
 
 ##1、目录结构
+
 ```
 disk_scrub(Linux)
 |_ src
@@ -39,7 +40,9 @@ disk_scrub(Linux)
 |_ README
 |_ ChangeLog
 ```
+
 ##2、安装说明
+
 使用automake工具进行编译，生成可执行程序。过程如下：
 1、进入源文件目录使用`autoscan`命令，生成configure.scan
 2、进入configure.scan文件，在AC_INIT宏之后加入AM_INIT_AUTOMAKE(disk_scrub, 1.0)，这里disk_scrub是你要编译成的软件的名称，1.0是版本号，即你的这些源程序编译将生成一个软件Test-1.0版。然后退出，把configure.scan文件改名为configure.in。
@@ -52,7 +55,9 @@ disk_scrub(Linux)
 
 **Makefile.am已经编写完成，可以直接使用**
 **如果想了解关于automake等工具的进一步使用，可以上网查阅资料，或者查看我的博客：https://hackerhome.top/index.php/archives/12/**
+
 ##3、使用说明
+
 编译完成后会生成disk_scrub可执行文件（具体编译完成的文件名由Makefile.am中指定，可以自行修改）。
 使用命令`sudo ./disk_scrub`即可执行。**注意，程序执行需要root权限！**
 运行后界面如下：
