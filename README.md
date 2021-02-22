@@ -74,7 +74,7 @@ disk_scrub(Linux)
 输入序号即可选择功能。
 第一种功能：
 
-![功能一] (./说明/picture/2.png ''功能一'')
+![功能一] (https://github.com/MBarcak/disk_scrub/blob/main/%E8%AF%B4%E6%98%8E/picture/2.png ''功能一'')
 
 第二种功能：
 
