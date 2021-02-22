@@ -2,6 +2,7 @@
 A disk data erasure program based on Linux system
 
 基于大佬的scrub项目编写，指路：https://github.com/chaos/scrub
+
 ##1、目录结构
 ```
 disk_scrub(Linux)
