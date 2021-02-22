@@ -32,7 +32,7 @@ disk_scrub(Linux)
   |_	util.c
   |_	util.h
 |_ 说明
-  |_ pitcure
+  |_ picture
   |_Readme.md
 |_ Makefile.am
 |_ NEWS
