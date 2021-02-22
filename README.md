@@ -63,7 +63,7 @@ disk_scrub(Linux)
 使用命令`sudo ./disk_scrub`即可执行。**注意，程序执行需要root权限！**
 运行后界面如下：
 
-![运行界面] (./说明/picture/1.png ''运行界面'')
+ ![运行界面](./说明/picture/1.png ''运行界面'')
 
 共有三种功能：
 ```
@@ -74,18 +74,18 @@ disk_scrub(Linux)
 输入序号即可选择功能。
 第一种功能：
 
-![功能一] (https://github.com/MBarcak/disk_scrub/blob/main/%E8%AF%B4%E6%98%8E/picture/2.png ''功能一'')
+ ![功能一](https://github.com/MBarcak/disk_scrub/blob/main/%E8%AF%B4%E6%98%8E/picture/2.png ''功能一'')
 
 第二种功能：
 
-![功能二] (./说明/picture/3.png ''功能二'')
+ ![功能二](./说明/picture/3.png ''功能二'')
 
 第三种功能：
 
-![功能三] (./说明/picture/4.png ''功能三'')
+ ![功能三](./说明/picture/4.png ''功能三'')
 
 输入要擦除的磁盘或目录后，可以输入序号选择擦除算法。如输入1使用`nnsa`算法，该算法先对磁盘进行两次随机数写入，后对磁盘进行0x00写入，最后验证。或输入12使用`fillzero`算法，该算法对磁盘进行一次快速0x00写入等，如下：
 
-![算法选择] (./说明/picture/5.png ''算法选择'')
+ ![算法选择](./说明/picture/5.png ''算法选择'')
 
 最后等待程序完成即可。
