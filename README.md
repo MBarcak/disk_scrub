@@ -61,6 +61,7 @@ disk_scrub(Linux)
 
 编译完成后会生成disk_scrub可执行文件（具体编译完成的文件名由Makefile.am中指定，可以自行修改）。
 使用命令`sudo ./disk_scrub`即可执行。**注意，程序执行需要root权限！**
+
 运行后界面如下：
 
  [![运行图片](https://s3.ax1x.com/2021/02/22/yHXtMT.png)](https://imgchr.com/i/yHXtMT)
