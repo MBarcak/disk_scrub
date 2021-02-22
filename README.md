@@ -3,7 +3,7 @@ A disk data erasure program based on Linux system
 
 基于大佬的scrub项目编写，指路：https://github.com/chaos/scrub
 
-##1、目录结构
+## 1、目录结构
 
 ```
 disk_scrub(Linux)
@@ -41,7 +41,7 @@ disk_scrub(Linux)
 |_ ChangeLog
 ```
 
-##2、安装说明
+## 2、安装说明
 
 使用automake工具进行编译，生成可执行程序。过程如下：
 1、进入源文件目录使用`autoscan`命令，生成configure.scan
@@ -56,12 +56,14 @@ disk_scrub(Linux)
 **Makefile.am已经编写完成，可以直接使用**
 **如果想了解关于automake等工具的进一步使用，可以上网查阅资料，或者查看我的博客：https://hackerhome.top/index.php/archives/12/**
 
-##3、使用说明
+## 3、使用说明
 
 编译完成后会生成disk_scrub可执行文件（具体编译完成的文件名由Makefile.am中指定，可以自行修改）。
 使用命令`sudo ./disk_scrub`即可执行。**注意，程序执行需要root权限！**
 运行后界面如下：
+
 ![运行界面](./说明/picture/1.png ''运行界面'')
+
 共有三种功能：
 ```
 1、物理盘或逻辑盘数据擦除
@@ -70,11 +72,19 @@ disk_scrub(Linux)
 ```
 输入序号即可选择功能。
 第一种功能：
+
 ![功能一](./说明/picture/2.png ''功能一'')
+
 第二种功能：
+
 ![功能二](./说明/picture/3.png ''功能二'')
+
 第三种功能：
+
 ![功能三](./说明/picture/4.png ''功能三'')
+
 输入要擦除的磁盘或目录后，可以输入序号选择擦除算法。如输入1使用`nnsa`算法，该算法先对磁盘进行两次随机数写入，后对磁盘进行0x00写入，最后验证。或输入12使用`fillzero`算法，该算法对磁盘进行一次快速0x00写入等，如下：
+
 ![算法选择](./说明/picture/5.png ''算法选择'')
+
 最后等待程序完成即可。
